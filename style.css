@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/*Header CSS*/
+h4 {
+    color: white;
+    float: left;
+    margin-right: 285px;
+    font-size: 35px;
+}
+nav {
+    height: 48px;
+}
+nav ul li {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    float: left;
+    margin-right: 13px;
+    margin-top: 13px;
+}
+
+/*Body left top side*/
+.bodyLeft{
+  width: 60%;
+  float: left;
+}
+.bodyLeft > .BackgroundImg{
+  background-image: url(https://i.pinimg.com/originals/4f/29/59/4f2959670ef1e633eeb7d8b2fb379d45.jpg);
+  background-repeat: no-repeat;
+  background-size: 688px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  float: left;
+}
+.TrumpPress{
+
+width: 28%;
+float: left;
+margin-right:24%;
+text-align: center;
+}
+h1 {
+    color: white;
+    font-size: 32px;
+    margin: 22px 0px 16px 22px;
+}
+h1+p {
+    color: gold;
+    margin: 22px 0px 2px 22px;
+}
+.TrumpPress span{
+    font-size: 13px;
+    color: white;
+    margin: 22px 0px 16px 22px;
+}
+.rtLi{
+height: 400px;
+width: 48%;
+float: left;
+}
+h2{
+  text-align: center;
+  color: white;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 22px;
+  font-size: 17px;
+}
+.rtLi ul{
+  margin-top: 15px;
+}
+.rtLi li{
+  font-size: 23px;
+  font-weight: bolder;
+  list-style: none;
+  color: white;
+  margin-bottom: 23px;
+}
+/* Body side left bottom */
+.bodyLeft .pink {
+    width: 50%;
+    /* height: 376px; */
+    float: left;
+}
+.pinkLt{
+  height: 180px;
+  width: 69%;
+  float: left;
+}
+.pinkLt:first-child {
+  background-image: url(https://previews.123rf.com/images/misunseo/misunseo1409/misunseo140900043/31739976-dry-earth-texture.jpg);
+  background-repeat: no-repeat;
+  background-size: 461px;
+  background-position: center;
+  margin-top: 8px;
+  border: 2px solid lightgrey;
+}
+.pinkLt p{
+  color: black;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  border: 2px solid lightgrey;
+  height: 180px;
+}
+.pinkRt {
+    height: 170px;
+    width: 100%;
+    float: left;
+    margin-bottom: 16px;
+}
+.pinkRt:first-child{
+  margin-top: 8px;
+  border: 2px solid lightgrey;
+}
+.pinkRt:nth-of-type(2n){
+  background-color: #661c33;
+}
+h3{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+h3+span{
+  margin-left: 20px;
+
+}
+
+/*Righ body CSS*/
+.bodyRight{
+  width: 40%;
+  float: right;
+}
+.bodyRight > .headerLt{
+  background-color: #661c33;
+  width: 100%;
+  height: 49px;
+}
+
+.bodyRight section {
+    width: 100%;
+    height: 688px;
+}
+
+.bodyRight section > .belowNav{
+  padding: 10px;
+  background-color: #281b21;
+  width: 100%;
+  height: 46px;
+}
+
+.belowNav > ul {
+  list-style: none;
+}
+
+.belowNav > ul > li > a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.belowNav > ul > li:first-child {
+  float: left;
+}
+
+.belowNav > ul > li:first-child > a {
+  color: white;
+}
+
+.belowNav > ul > li:last-child {
+  float: right;
+}
+
+.belowNav > ul > li:last-child > a{
+  color: gold;
+}
+
+/*List right body*/
+section .lsTlI {
+    margin-top: 45px;
+}
+section .lsTlI ul li {
+    float: left;
+    list-style: none;
+    width: 100%;
+    color: black;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 16px;
+}
+
+/* media queries for tablets */
+@media only screen and (max-width: 1024px) {
+  .bodyRight {
+  display: none;
+  }
+  .bodyLeft > .BackgroundImg{
+    height: 537px;
+  }
+  .pinkLt p{
+
+  }
+  .pinkRt{
+    height: auto;
+    width: auto;
+  }
+  .bodyLeft {
+    width: 100%;
+    float: right;
+  }
+}
+
+/* media queries for phones */
+@media only screen and (max-width: 768px) {
+  h1 {
+      margin: 0px 0px 16px 22px;
+  }
+  .TrumpPress{
+    width: 100%;
+    float: none;
+  }
+  .rtLi{
+    width: 100%;
+  }
+  .rtLi li{
+    font-size: 19px;
+  }
+
+  .bodyRight {
+    display: none;
+  }
+
+  .bodyLeft {
+    width: 100%;
+    float: right;
+  }
+  .bodyLeft > .BackgroundImg{
+    float: none;
+  }
+  nav ul{
+    display: none;
+  }
+  .pinkRt {
+    height: auto;
+    width: auto;
+  }
+  .pinkRt:first-child {
+    width: 95%;
+    margin: 8px 3%;
+}
+.pinkRt:nth-of-type(2n) {
+  width: 95%;
+  margin: 1px 3%;
+}
+  .bodyLeft .pink {
+      width: 100%;
+      float: none;
+  }
+  .pinkLt {
+      width: 95%;
+      float: none;
+      margin: 9px auto;
+  }
+
+
+}
